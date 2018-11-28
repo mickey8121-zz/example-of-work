@@ -1,0 +1,230 @@
+// КОНТЕЙНЕР КОНТЕНТА
+.paymentWindow{
+  position: absolute;
+  top: 86px;
+  left: 37.1666%;
+  width: 53.25%;
+  max-width: 639px;
+}
+
+// ШАПКА
+.header{
+  width: 100%;
+  height: 162px;
+  background-color: #00aeef;
+
+  // ЗАГОЛОВОК
+  & .title{
+    display: inline-block;
+    margin: 39px 0 0 27px;
+    padding: 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: #193945;
+    box-sizing:content-box;
+  }
+
+  // ТЕКСТ ПОД ЗАГОЛОВКОМ
+  & .smallText{
+    margin: 8px 0 0 27px;
+    font-family: ariel;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #193945;
+  }
+}
+
+// КОНТЕЙНЕР С ДАННЫМИ ОПЛАТЫ
+.content{
+  width: 100%;
+  max-width: 639px;
+  height: 569px;
+  background-color: #fff;
+  padding: 44px 0 0 28px;
+  box-sizing: border-box;
+
+  & .blockInfo{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    // margin: 0 0 0 28px;
+    font-family: ariel;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8494ab;
+    line-height: 24px;
+
+
+    & .info{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row;
+      margin-top: 14px ;
+
+      & .description{
+        display: inline-block;
+        color: #8494ab;
+        margin-right: 40px;
+      }
+      & .dataPay{
+        color: #373c43;
+      }
+    }
+  }
+// "ДАННЫЕ БАНКОВСКОЙ КАРТЫ"
+  & .titleCardData{
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #383d43;
+  }
+
+  // ФОРМА КАРТЫ
+  & .bankCard{
+    width: 600px;
+    height: 260px;
+    margin-top: 19px;
+
+    & input{
+      box-sizing: border-box;
+      border: 1px solid #e4e9ee;
+
+      &:invalid:not(:placeholder-shown){
+        border: 1px solid #ff0000;
+      }
+
+      &:valid:not(:placeholder-shown){
+        border: 1px solid #9ec500;
+      }
+    }
+
+    // НОМЕР КАРТЫ
+    & .cardNumber{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      position: relative;
+      bottom: 219px;
+      left: 18px;
+
+      & input{
+        width: 65px;
+        height: 42px;
+        box-sizing: border-box;
+        margin-right: 9px;
+        text-align: center;
+      }
+    }
+
+    // ДАТА КАРТЫ
+    & .validity{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: row;
+      width: 165px;
+      position: relative;
+      bottom: 180px;
+      left: 18px;
+
+      & #month{
+        width: 70px;
+        height: 42px;
+        box-sizing: border-box;
+        margin-right: 9px;
+        padding-left: 14px;
+        box-sizing: border-box;
+        border: 1px solid #e4e9ee;
+      }
+
+      & #year{
+        width: 86px;
+        height: 42px;
+        padding-left: 14px;
+        box-sizing: border-box;
+        border: 1px solid #e4e9ee;
+      }
+
+      & #arrow1{
+        position: absolute;
+        left: 44px;
+        top: 16px;
+        width: 14px;
+        height: 8px;
+      }
+
+      & #arrow2{
+        position: absolute;
+        right: 8px;
+        top: 16px;
+        width: 14px;
+        height: 8px;
+      }
+    }
+
+    // ВЛАДЕЛЕЦ КАРТЫ
+    & .cardowner{
+      width: 320px;
+      position: relative;
+      bottom: 168px;
+      left: 18px;
+
+      & input{
+        width: 319px;
+        height: 42px;
+        padding-left: 10px;
+        color: #000;
+      }
+    }
+
+    // CVV-КОД
+    & .cvvCod{
+      width: 140px;
+      position: relative;
+      bottom: 264px;
+      left: 415px;
+
+      & input{
+        width: 138px;
+        height: 42px;
+        padding-left: 8px;
+      }
+    }
+
+    // КНОПКА ОПЛАТЫ
+    & .btnPay{
+      width: 173px;
+      height: 40px;
+      background-color: #9ec500;
+      color: #fff;
+      border: 1px solid #9ec500;
+      border-radius: 3px;
+      box-sizing: border-box;
+      position: relative;
+      bottom: 160px;
+      left: 5px;
+    }
+  }
+  // ФОРМА КАРТЫ !!!КОНЕЦ!!!
+}
+// КОНТЕЙНЕР С ДАННЫМИ ОПЛАТЫ !!!КОНЕЦ!!!
+
+// ФУТЕР
+.footer{
+  width: 100%;
+  // height: 263px;
+  background-color: #373c43;
+
+  & .footnote{
+    color: #7f8591;
+    font-family: ariel;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 27px 29px;
+  }
+}

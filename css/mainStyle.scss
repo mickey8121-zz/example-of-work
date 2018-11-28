@@ -1,0 +1,71 @@
+ @import "sidebar.css";
+ @import "paymentWindow.css";
+ @import "media.css";
+ // ПРИШЛОСЬ ПОДКЛЮЧИТЬ ЧЕРЕЗ ГУГЛ
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  outline: none;
+}
+
+ // ПОДКЛЮЧЕНИЕ ШРИФТА
+@font-face{
+  font-family: Open Sans;
+  src: url(fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+  background: #101114;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(images\arrowSelect.png);
+
+  &::-ms-expand {  /* для IE */
+    display: none;
+  }
+
+  & option:nth-child(2) {
+  background: url(images\arrowSelect.png) 100% 50% no-repeat;
+}
+
+}
+
+
+.toggleMenu{
+   display: none;
+}
+
+.bankCard{
+  & img{
+    display: none;
+  }
+
+  & .cardTemplate{
+    display: block;
+  }
+
+  & #arrow1{
+    display: inline-block;
+  }
+
+  & #arrow2{
+    display: inline-block;
+  }
+}

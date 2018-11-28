@@ -1,0 +1,109 @@
+// БЛОК С ЛОГО И МЕНЮ
+#sidebar{
+  width: 26.5%;
+  max-width: 360px;
+  height: 538px;
+  background-color: #1f2229;
+  position: absolute;
+  top: 86px;
+  left: 10.4166%;
+
+    & .logo{
+      display: block;
+      margin: 64px 29px 59px 29px;
+
+      & img {
+        width: 176px;
+        height: 36px;
+      }
+    }
+}
+// БЛОК С ЛОГО И МЕНЮ !!!КОНЕЦ!!!
+
+// МЕНЮ
+#menu{
+  width: 100%;
+  height: 375px;
+  padding: 0;
+  list-style-type: none;
+
+  // ВСЕ ПУНКТЫ МЕНЮ
+  & .menuItem{
+    width: 100%;
+    max-width: 360px;
+    height: 75px;
+
+  }
+
+  // 1 ГРУППА(СВЕТЛЫЕ)
+  & .group1{
+    background-color: #1f2229;
+    box-sizing: border-box;
+    border-top: 1px solid #1f2229;
+    border-bottom: 1px solid #1f2229;
+
+    & a{
+      display: inline-block;
+      color: #fff;
+      padding: 23px 0 0 28px;
+      font-size: 18px;
+      height: 75px;
+      width: 100%;
+      max-width: 360px;
+      box-sizing: border-box;
+    }
+
+    &:hover{
+      border-top: 1px solid #242730;
+    }
+
+    &:active{
+      border-top: 1px solid #242730;
+      background-color: #2a2d37;
+
+      & a{
+        color: #808592;
+      }
+    }
+  }
+  // 1 ГРУППА(СВЕТЛЫЕ) !!!КОНЕЦ!!!
+
+  // 2 ГРУППА(ТЁМНЫЕ)
+  & .group2{
+    background-color: #191c24;
+    box-sizing: border-box;
+    border-top: 1px solid #191c24;
+
+    & a{
+      display: inline-block;
+      color: #808592;
+      padding: 23px 0 0 28px;
+      font-size: 18px;
+      height: 75px;
+      width: 100%;
+      max-width: 360px;
+      box-sizing: border-box;
+    }
+
+    &:hover{
+      border-top: 1px solid #242730;
+    }
+
+    &:active{
+      border-top: 1px solid #242730;
+      background-color: #2a2d37;
+
+      & a{
+        color: #808592;
+      }
+    }
+  }
+  // 2 ГРУППА(ТЁМНЫЕ) !!!КОНЕЦ!!!
+
+  // ПЕРВЫЙ ПУНКТ МЕНЮ
+  & .firstItem{
+    box-sizing: border-box;
+    border-top: 1px solid #22252d;
+  }
+}
+// МЕНЮ !!!КОНЕЦ!!!

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/mainStyle.css">
+
+
+</head>
+<body>
+  <!-- БАР С МЕНЮ И ЛОГО -->
+  <div id="sidebar">
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="CHULAKOV RU">
+    </a>
+    <!-- КНОПКА ПОКАЗА МЕНЮ -->
+    <div class="toggleMenu">
+      <button id="btnMenu" >
+        <hr id="menuHR" class="hrTop">
+        <hr id="menuHR" class="hrMiddle">
+        <hr id="menuHR" class="hrLow">
+      </button>
+    </div>
+    <!-- КНОПКА ПОКАЗА МЕНЮ !!!КОНЕЦ!!!-->
+
+    <!-- МЕНЮ -->
+    <ul id="menu">
+      <li class="menuItem group1 firstItem"><a href="#">Первая ссылка</a></li>
+      <li class="menuItem group1"><a href="#">Вторая ссылка</a></li>
+      <li class="menuItem group1"><a href="#">Третья ссылка</a></li>
+      <li class="menuItem group2"><a href="#">Личный кабинет</a></li>
+      <li class="menuItem group2 fifthItem"><a href="#">Выйти</a></li>
+    </ul>
+    <!-- МЕНЮ !!!КОНЕЦ!!! -->
+  </div>
+  <!-- БАР С МЕНЮ И ЛОГО !!!КОНЕЦ!!!-->
+
+  <!-- КОНТЕЙНЕР КОНТЕНТА -->
+  <div class="paymentWindow">
+
+    <!-- ШАПКА -->
+    <div class="header">
+      <div class="title">
+        Заголовок страницы
+      </div>
+
+      <div class="smallText">
+        В отличие от пылевого и ионного хвостов, направление поступает <br>
+        в лимногляциальный часовой угол
+      </div>
+    </div>
+    <!-- ШАПКА !!!КОНЕЦ!!! -->
+
+    <!-- ДАННЫЕ ПЛАТЕЖА-->
+    <div class="content">
+      <div class="blockInfo">
+        Инофрмация по оплате:<br>
+        <div class="info">
+          <div class="description">
+            Номер счета:<br>
+            Сумма платежа:
+          </div>
+          <div class="dataPay">
+            87123658716587<br>
+            100 руб.
+          </div>
+        </div>
+      </div>
+
+      <div class="titleCardData">
+        Данные банковской карты
+      </div>
+      <!-- ДАННЫЕ ПЛАТЕЖА !!!КОНЕЦ!!!-->
+
+      <!-- ФОРМА КАРТЫ -->
+      <form class="bankCard">
+        <img class="cardTemplate" src="images/cardTemplate.png" alt="">
+        <img src="images/titleSide.png" alt="">
+        <img id="backSideCard" src="images/backSide.png" alt="">
+
+        <!-- НОМЕР КАРТЫ -->
+        <div class="cardNumber">
+          <input id="14" type="text" placeholder="  " pattern="[0-9]{4}" maxlength="4" tabindex="1" required>
+          <input id="24" type="text" placeholder="  " pattern="[0-9]{4}" maxlength="4" tabindex="2" required>
+          <input id="34" type="text" placeholder="  " pattern="[0-9]{4}" maxlength="4" tabindex="3" required>
+          <input id="44" type="text" placeholder="  " pattern="[0-9]{4}" maxlength="4" tabindex="4" required>
+        </div>
+
+        <!-- ДАТА ОФОРМЛЕНИЯ КАРТЫ -->
+        <div class="validity">
+          <img id="arrow1" src="images\arrowSelect.png" alt="">
+          <select name="" id="month" tabindex="5">
+            <option value="" required >01</option>
+            <option value="" required >02</option>
+            <option value="" required >03</option>
+            <option value="" required >04</option>
+            <option value="" required >05</option>
+            <option value="" required >06</option>
+            <option value="" required >07</option>
+            <option value="" required >08</option>
+            <option value="" required >09</option>
+            <option value="" required >10</option>
+            <option value="" required >11</option>
+            <option value="" required >12</option>
+          </select>
+          <img id="arrow2" src="images\arrowSelect.png" alt="">
+          <select name="" id="year" tabindex="6">
+            <option value="">2018</option>
+            <option value="">2019</option>
+            <option value="">2020</option>
+            <option value="">2021</option>
+          </select>
+        </div>
+        <!-- ДАТА ОФОРМЛЕНИЯ КАРТЫ !!!КОНЕЦ!!!-->
+
+        <!-- Ф.И ВЛАДЕЛЬЦА -->
+        <div class="cardowner">
+          <input type="text" name="" placeholder="Держатель карты" tabindex="7" pattern="[A-Za-z]{4,}\s[A-Za-z]{4,}" required >
+        </div>
+
+        <!-- CVV-КОД -->
+        <div class="cvvCod">
+          <input type="text" placeholder=" " pattern="[0-9]{3}" tabindex="8" required>
+        </div>
+
+        <!-- КНОПКА ОПЛАТЫ -->
+        <button class="btnPay">
+          Оплатить
+        </button>
+
+      </form>
+      <!-- ФОРМА КАРТЫ !!!КОНЕЦ!!! -->
+    </div>
+    <!-- ДАННЫЕ ПЛАТЕЖА И КАРТЫ !!!КОНЕЦ!!!-->
+
+    <!-- ФУТЕР -->
+    <div class="footer">
+      <div class="footnote">
+        Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть <br>
+        артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет <br>
+        систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+        <br>
+        <br>
+        Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+        <br>
+        <br>
+        Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+        <br>
+        <br>
+        Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция <br>
+        вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена <br>
+        покрывает вибрирующий волчок, что обусловлено не только первичными неровностями <br>
+        эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее <br>
+        поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+      </div>
+    </div>
+    <!-- ФУТЕР !!!КОНЕЦ!!! -->
+
+  </div>
+  <!-- КОНТЕЙНЕР КОНТЕНТА !!!КОНЕЦ!!!-->
+
+  <script src="scripts/mainScript.js"></script>
+</body>
+</html>

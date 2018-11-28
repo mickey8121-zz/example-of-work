@@ -1,0 +1,68 @@
+#sidebar {
+  width: 26.5%;
+  max-width: 360px;
+  height: 538px;
+  background-color: #1f2229;
+  position: absolute;
+  top: 86px;
+  left: 10.4166%; }
+  #sidebar .logo {
+    display: block;
+    margin: 64px 29px 59px 29px; }
+    #sidebar .logo img {
+      width: 176px;
+      height: 36px; }
+
+#menu {
+  width: 100%;
+  height: 375px;
+  padding: 0;
+  list-style-type: none; }
+  #menu .menuItem {
+    width: 100%;
+    max-width: 360px;
+    height: 75px; }
+  #menu .group1 {
+    background-color: #1f2229;
+    box-sizing: border-box;
+    border-top: 1px solid #1f2229;
+    border-bottom: 1px solid #1f2229; }
+    #menu .group1 a {
+      display: inline-block;
+      color: #fff;
+      padding: 23px 0 0 28px;
+      font-size: 18px;
+      height: 75px;
+      width: 100%;
+      max-width: 360px;
+      box-sizing: border-box; }
+    #menu .group1:hover {
+      border-top: 1px solid #242730; }
+    #menu .group1:active {
+      border-top: 1px solid #242730;
+      background-color: #2a2d37; }
+      #menu .group1:active a {
+        color: #808592; }
+  #menu .group2 {
+    background-color: #191c24;
+    box-sizing: border-box;
+    border-top: 1px solid #191c24; }
+    #menu .group2 a {
+      display: inline-block;
+      color: #808592;
+      padding: 23px 0 0 28px;
+      font-size: 18px;
+      height: 75px;
+      width: 100%;
+      max-width: 360px;
+      box-sizing: border-box; }
+    #menu .group2:hover {
+      border-top: 1px solid #242730; }
+    #menu .group2:active {
+      border-top: 1px solid #242730;
+      background-color: #2a2d37; }
+      #menu .group2:active a {
+        color: #808592; }
+  #menu .firstItem {
+    box-sizing: border-box;
+    border-top: 1px solid #22252d; }

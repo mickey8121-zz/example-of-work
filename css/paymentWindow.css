@@ -1,0 +1,214 @@
+.paymentWindow {
+  position: absolute;
+  top: 86px;
+  left: 37.1666%;
+  width: 53.25%;
+  max-width: 639px;
+}
+
+.header {
+  width: 100%;
+  height: 162px;
+  background-color: #00aeef;
+}
+
+.header .title {
+  display: inline-block;
+  margin: 39px 0 0 27px;
+  padding: 0;
+  font-size: 35px;
+  font-weight: bold;
+  color: #193945;
+  box-sizing: content-box;
+}
+
+.header .smallText {
+  margin: 8px 0 0 27px;
+  font-family: ariel;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #193945;
+}
+
+.content {
+  width: 100%;
+  max-width: 639px;
+  height: 569px;
+  background-color: #fff;
+  padding: 44px 0 0 28px;
+  box-sizing: border-box;
+}
+
+.content .blockInfo {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  font-family: ariel;
+  font-weight: normal;
+  font-size: 16px;
+  color: #8494ab;
+  line-height: 24px;
+}
+
+.content .blockInfo .info {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
+}
+
+.content .blockInfo .info .description {
+  display: inline-block;
+  color: #8494ab;
+  margin-right: 40px;
+}
+
+.content .blockInfo .info .dataPay {
+  color: #373c43;
+}
+
+.content .titleCardData {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #383d43;
+}
+
+.content .bankCard {
+  width: 600px;
+  height: 260px;
+  margin-top: 19px;
+}
+
+.content .bankCard input {
+  box-sizing: border-box;
+  border: 1px solid #e4e9ee;
+}
+
+.content .bankCard input:invalid:not(:placeholder-shown) {
+  border: 1px solid #ff0000;
+}
+
+.content .bankCard input:valid:not(:placeholder-shown) {
+  border: 1px solid #9ec500;
+}
+
+.content .bankCard .cardNumber {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  position: relative;
+  bottom: 219px;
+  left: 18px;
+}
+
+.content .bankCard .cardNumber input {
+  width: 65px;
+  height: 42px;
+  box-sizing: border-box;
+  margin-right: 9px;
+  text-align: center;
+}
+
+.content .bankCard .validity {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  width: 165px;
+  position: relative;
+  bottom: 180px;
+  left: 18px;
+}
+
+.content .bankCard .validity #month {
+  width: 70px;
+  height: 42px;
+  box-sizing: border-box;
+  margin-right: 9px;
+  padding-left: 14px;
+  box-sizing: border-box;
+  border: 1px solid #e4e9ee;
+}
+
+.content .bankCard .validity #year {
+  width: 86px;
+  height: 42px;
+  padding-left: 14px;
+  box-sizing: border-box;
+  border: 1px solid #e4e9ee;
+}
+
+.content .bankCard .validity #arrow1 {
+  position: absolute;
+  left: 44px;
+  top: 16px;
+  width: 14px;
+  height: 8px;
+}
+
+.content .bankCard .validity #arrow2 {
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  width: 14px;
+  height: 8px;
+}
+
+.content .bankCard .cardowner {
+  width: 320px;
+  position: relative;
+  bottom: 168px;
+  left: 18px;
+}
+
+.content .bankCard .cardowner input {
+  width: 319px;
+  height: 42px;
+  padding-left: 10px;
+  color: #000;
+}
+
+.content .bankCard .cvvCod {
+  width: 140px;
+  position: relative;
+  bottom: 264px;
+  left: 415px;
+}
+
+.content .bankCard .cvvCod input {
+  width: 138px;
+  height: 42px;
+  padding-left: 8px;
+}
+
+.content .bankCard .btnPay {
+  width: 173px;
+  height: 40px;
+  background-color: #9ec500;
+  color: #fff;
+  border: 1px solid #9ec500;
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 160px;
+  left: 5px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #373c43;
+}
+
+.footer .footnote {
+  color: #7f8591;
+  font-family: ariel;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 27px 29px;
+}

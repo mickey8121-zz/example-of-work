@@ -1,0 +1,1328 @@
+@charset "UTF-8";
+@media (max-width: 320px) {
+  /*max-width = 320px*/
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  /*САЙДБАР*/
+  #sidebar {
+    position: static;
+    width: 100%;
+    max-width: 320px;
+    height: 82px;
+    padding-top: 23px;
+    background-color: #1f2229;
+    box-sizing: border-box;
+    overflow: auto;
+    /*КОСТЫЛЬ ДЛЯ ЛИСЫ!!! ОНА ПОЧЕМУ-ТО СТРАННО РАБОТАЕТ(НИФИГА НЕ РАБОТАЕТ) СО СКРИПТОМ*/
+  }
+  #sidebar::-webkit-scrollbar {
+    /*СКРЫТИЕ СКРОЛЛА ДЛЯ ХРОМ-ПОДОБНЫХ БРАУЗЕРОВ*/
+    display: none;
+  }
+  #sidebar .logo {
+    display: inline-block;
+    width: 176px;
+    height: 36px;
+    margin: 0;
+  }
+  #sidebar .logo img {
+    width: 176px;
+    height: 100%;
+  }
+  #sidebar .toggleMenu {
+    display: inline-block;
+    float: right;
+    height: 38px;
+    z-index: 1;
+  }
+  #sidebar .toggleMenu button {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #1f2229;
+    background-color: #1f2229;
+  }
+  #sidebar .toggleMenu button:hover {
+    border: 1px solid #242730;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  /*ИКОНКА "КРЕСТИК" НА КНОПКЕ МЕНЮ*/
+  .closeIcon hr {
+    position: relative;
+  }
+  .closeIcon .hrTop {
+    top: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .closeIcon .hrMiddle {
+    bottom: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .closeIcon .hrLow {
+    top: 5px;
+  }
+  /*САЙДБАР !!!КОНЕЦ!!!*/
+  /*ВЫПАДАЮЩЕЕ МЕНЮ*/
+  #menu {
+    display: none;
+    height: 250px;
+    margin: 16px 0 0 0;
+  }
+  #menu .menuItem {
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+  }
+  #menu .group1 {
+    background-color: #1f2229;
+    box-sizing: border-box;
+    border-top: 1px solid #1f2229;
+    border-bottom: 1px solid #1f2229;
+  }
+  #menu .group1 a {
+    display: inline-block;
+    color: #fff;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #menu .group1:hover {
+    border-top: 1px solid #242730;
+  }
+  #menu .group1:active {
+    border-top: 1px solid #242730;
+    background-color: #2a2d37;
+  }
+  #menu .group1:active a {
+    color: #808592;
+  }
+  #menu .group2 {
+    background-color: #191c24;
+    box-sizing: border-box;
+    border-top: 1px solid #191c24;
+  }
+  #menu .group2 a {
+    display: inline-block;
+    color: #808592;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #menu .group2:hover {
+    border-top: 1px solid #242730;
+  }
+  #menu .group2:active {
+    border-top: 1px solid #242730;
+    background-color: #2a2d37;
+  }
+  #menu .group2:active a {
+    color: #808592;
+  }
+  /*ВЫПАДАЮЩЕЕ МЕНЮ !!!КОНЕЦ!!!*/
+  /*ОСНОВНОЙ КОНТЕЙНЕР*/
+  .paymentWindow {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+  /*ЗАГОЛОВОК*/
+  .header {
+    width: 100%;
+    height: 120px;
+    background-color: #00aeef;
+  }
+  .header .title {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #193945;
+    text-align: center;
+    box-sizing: content-box;
+  }
+  .header .smallText {
+    margin: 8px 0 0 27px;
+    font-family: ariel;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+    color: #193945;
+  }
+  /*ЗАГОЛОВОК !!!КОНЕЦ!!!*/
+  /*ФОРМА ОПЛАТЫ И ИНФО*/
+  .content {
+    width: 100%;
+    max-width: 639px;
+    height: 569px;
+    background-color: #fff;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    /*ФОРМЫ КАРТЫ*/
+  }
+  .content .blockInfo {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    font-family: ariel;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8494ab;
+    line-height: 24px;
+  }
+  .content .blockInfo .info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    margin-top: 14px;
+  }
+  .content .blockInfo .info .description {
+    display: inline-block;
+    color: #8494ab;
+    margin-right: 40px;
+  }
+  .content .blockInfo .info .dataPay {
+    color: #373c43;
+  }
+  .content .titleCardData {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #383d43;
+  }
+  .content .bankCard {
+    width: 100%;
+    height: 260px;
+    margin-top: 10px;
+    text-align: center;
+    /*ФОРМЫ КАРТЫ !!!КОНЕЦ!!!*/
+  }
+  .content .bankCard .cardTemplate {
+    display: none;
+  }
+  .content .bankCard img {
+    position: relative;
+    display: block;
+    width: 280px;
+    z-index: 1;
+  }
+  .content .bankCard #backSideCard {
+    bottom: 45px;
+    z-index: 0;
+  }
+  .content .bankCard input {
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+    z-index: 1;
+  }
+  .content .bankCard input:invalid:not(:placeholder-shown) {
+    border: 1px solid #ff0000;
+  }
+  .content .bankCard input:valid:not(:placeholder-shown) {
+    border: 1px solid #9ec500;
+  }
+  .content .bankCard .cardNumber {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    position: relative;
+    bottom: 335px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardNumber input {
+    width: 53px;
+    height: 32px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    text-align: center;
+  }
+  .content .bankCard .validity {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    position: relative;
+    bottom: 304px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .validity #month {
+    width: 58px;
+    height: 32px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+  }
+  .content .bankCard .validity #year {
+    width: 74px;
+    height: 32px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+  }
+  .content .bankCard .validity #arrow1 {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .validity #arrow2 {
+    position: absolute;
+    right: 6px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .cardowner {
+    width: 255px;
+    position: relative;
+    bottom: 295px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardowner input {
+    width: 255px;
+    height: 32px;
+    padding-left: 10px;
+    color: #bec6cf;
+  }
+  .content .bankCard .cvvCod {
+    width: 100px;
+    position: relative;
+    bottom: 243px;
+    left: 162px;
+    z-index: 1;
+  }
+  .content .bankCard .cvvCod input {
+    width: 100px;
+    height: 32px;
+    padding-left: 8px;
+  }
+  .content .bankCard .btnPay {
+    width: 173px;
+    height: 40px;
+    background-color: #9ec500;
+    color: #fff;
+    border: 1px solid #9ec500;
+    border-radius: 3px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 160px;
+    left: 5px;
+  }
+  /*ФУТЕР*/
+  .footer {
+    width: 100%;
+    background-color: #373c43;
+  }
+  .footer .footnote {
+    color: #7f8591;
+    font-family: ariel;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 5px;
+  }
+  /*ФУТЕР !!!КОНЕЦ!!!*/
+}
+
+@media (min-width: 321px) and (max-width: 500px) {
+  /*width = 321 - 650px*/
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  /*САЙДБАР*/
+  #sidebar {
+    position: static;
+    width: 100%;
+    max-width: 650px;
+    height: 82px;
+    padding: 23px 2.5% 0 2.5%;
+    background-color: #1f2229;
+    box-sizing: border-box;
+    overflow: auto;
+    /*КОСТЫЛЬ ДЛЯ ЛИСЫ!!! ОНА ПОЧЕМУ-ТО СТРАННО РАБОТАЕТ(НИФИГА НЕ РАБОТАЕТ) СО СКРИПТОМ*/
+  }
+  #sidebar::-webkit-scrollbar {
+    /*СКРЫВАЕТ СКРОЛЛ ДЛЯ ХРОМ-ПОДОБНЫХ БРАУЗЕРОВ*/
+    display: none;
+  }
+  #sidebar .logo {
+    display: inline-block;
+    width: 176px;
+    height: 36px;
+    margin: 0;
+  }
+  #sidebar .logo img {
+    width: 176px;
+    height: 100%;
+  }
+  #sidebar .toggleMenu {
+    display: inline-block;
+    float: right;
+    height: 38px;
+    z-index: 1;
+  }
+  #sidebar .toggleMenu button {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #1f2229;
+    background-color: #1f2229;
+  }
+  #sidebar .toggleMenu button:hover {
+    border: 1px solid #242730;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  /*ИКОНКА "КРЕСТИК" НА КНОПКЕ МЕНЮ*/
+  .closeIcon hr {
+    position: relative;
+  }
+  .closeIcon .hrTop {
+    top: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .closeIcon .hrMiddle {
+    bottom: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .closeIcon .hrLow {
+    top: 5px;
+  }
+  /*САЙДБАР !!!КОНЕЦ!!!*/
+  /*ВЫПАДАЮЩЕЕ МЕНЮ*/
+  #menu {
+    display: none;
+    height: 250px;
+    margin: 16px 0 0 0;
+    width: 100%;
+    max-width: 650px;
+  }
+  #menu .menuItem {
+    width: 100%;
+    max-width: 650px;
+    height: 50px;
+  }
+  #menu .group1 {
+    background-color: #1f2229;
+    box-sizing: border-box;
+    border-top: 1px solid #1f2229;
+    border-bottom: 1px solid #1f2229;
+  }
+  #menu .group1 a {
+    display: inline-block;
+    color: #fff;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #menu .group1:hover {
+    border-top: 1px solid #242730;
+  }
+  #menu .group1:active {
+    border-top: 1px solid #242730;
+    background-color: #2a2d37;
+  }
+  #menu .group1:active a {
+    color: #808592;
+  }
+  #menu .group2 a {
+    display: inline-block;
+    color: #808592;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  /*ВЫПАДАЮЩЕЕ МЕНЮ !!!КОНЕЦ!!!*/
+  /*ОСНОВНОЙ КОНТЕЙНЕР*/
+  .paymentWindow {
+    position: static;
+    width: 95%;
+    margin: 0 2.5% 10px 2.5%;
+  }
+  /*ЗАГОЛОВОК*/
+  .header {
+    width: 100%;
+    height: 120px;
+    background-color: #00aeef;
+  }
+  .header .title {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #193945;
+    text-align: center;
+    box-sizing: content-box;
+  }
+  .header .smallText {
+    margin: 8px 25px;
+    font-family: ariel;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+    color: #193945;
+  }
+  /*ЗАГОЛОВОК !!!КОНЕЦ!!!*/
+  /*ФОРМА ОПЛАТЫ И ИНФО*/
+  .content {
+    width: 100%;
+    max-width: 639px;
+    height: 569px;
+    background-color: #fff;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    /*ФОРМЫ КАРТЫ*/
+  }
+  .content .blockInfo {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    font-family: ariel;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8494ab;
+    line-height: 24px;
+    margin-left: 5px;
+  }
+  .content .blockInfo .info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    margin: 14px 0 0 10px;
+  }
+  .content .blockInfo .info .description {
+    display: inline-block;
+    color: #8494ab;
+    margin-right: 40px;
+  }
+  .content .blockInfo .info .dataPay {
+    color: #373c43;
+  }
+  .content .titleCardData {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #383d43;
+  }
+  .content .bankCard {
+    width: 100%;
+    height: 260px;
+    margin-top: 10px;
+    text-align: center;
+    /*ФОРМЫ КАРТЫ !!!КОНЕЦ!!!*/
+  }
+  .content .bankCard .cardTemplate {
+    display: none;
+  }
+  .content .bankCard img {
+    position: relative;
+    display: block;
+    width: 280px;
+    z-index: 1;
+  }
+  .content .bankCard #backSideCard {
+    float: right;
+    bottom: 50px;
+    left: 0;
+    z-index: 0;
+  }
+  .content .bankCard input {
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+    z-index: 1;
+  }
+  .content .bankCard .cardNumber {
+    width: 250px;
+    position: relative;
+    bottom: 335px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardNumber input {
+    width: 53px;
+    height: 32px;
+    margin-right: 7px;
+    text-align: center;
+  }
+  .content .bankCard .validity {
+    width: 120px;
+    position: relative;
+    bottom: 304px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .validity #month {
+    width: 58px;
+    height: 32px;
+    margin-right: 7px;
+    padding-left: 5px;
+  }
+  .content .bankCard .validity #year {
+    width: 74px;
+    height: 32px;
+    padding-left: 5px;
+  }
+  .content .bankCard .validity #arrow1 {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .validity #arrow2 {
+    position: absolute;
+    right: 6px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .cardowner {
+    width: 255px;
+    position: relative;
+    bottom: 295px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardowner input {
+    width: 255px;
+    height: 32px;
+    padding-left: 10px;
+  }
+  .content .bankCard .cvvCod {
+    width: 100%;
+    position: relative;
+    float: right;
+    left: 0;
+    bottom: 245px;
+    margin-right: 17px;
+    z-index: 1;
+  }
+  .content .bankCard .cvvCod input {
+    float: right;
+    width: 100px;
+    height: 32px;
+    padding-left: 8px;
+  }
+  .content .bankCard .btnPay {
+    position: relative;
+    bottom: 150px;
+    left: 5px;
+  }
+  /*ФУТЕР*/
+  .footer {
+    width: 100%;
+  }
+  .footer .footnote {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 15px 10px;
+  }
+  /*ФУТЕР !!!КОНЕЦ!!!*/
+}
+
+@media (min-width: 501px) and (max-width: 650px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  /*САЙДБАР*/
+  #sidebar {
+    position: static;
+    width: 100%;
+    max-width: 650px;
+    height: 82px;
+    padding: 23px 2.5% 0 2.5%;
+    background-color: #1f2229;
+    box-sizing: border-box;
+    overflow: auto;
+    /*КОСТЫЛЬ ДЛЯ ЛИСЫ!!! ОНА ПОЧЕМУ-ТО СТРАННО РАБОТАЕТ(НИФИГА НЕ РАБОТАЕТ) СО СКРИПТОМ*/
+  }
+  #sidebar::-webkit-scrollbar {
+    /*СКРЫВАЕТ СКРОЛЛ ДЛЯ ХРОМ-ПОДОБНЫХ БРАУЗЕРОВ*/
+    display: none;
+  }
+  #sidebar .logo {
+    display: inline-block;
+    width: 176px;
+    height: 36px;
+    margin: 0;
+  }
+  #sidebar .logo img {
+    width: 176px;
+    height: 100%;
+  }
+  #sidebar .toggleMenu {
+    display: inline-block;
+    float: right;
+    height: 38px;
+    z-index: 1;
+  }
+  #sidebar .toggleMenu button {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #1f2229;
+    background-color: #1f2229;
+  }
+  #sidebar .toggleMenu button:hover {
+    border: 1px solid #242730;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  /*ИКОНКА "КРЕСТИК" НА КНОПКЕ МЕНЮ*/
+  .closeIcon hr {
+    position: relative;
+  }
+  .closeIcon .hrTop {
+    top: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .closeIcon .hrMiddle {
+    bottom: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .closeIcon .hrLow {
+    top: 5px;
+  }
+  /*САЙДБАР !!!КОНЕЦ!!!*/
+  /*ВЫПАДАЮЩЕЕ МЕНЮ*/
+  #menu {
+    display: none;
+    height: 250px;
+    margin: 16px 0 0 0;
+    width: 100%;
+    max-width: 650px;
+  }
+  #menu .menuItem {
+    width: 100%;
+    max-width: 650px;
+    height: 50px;
+  }
+  #menu .group1 {
+    background-color: #1f2229;
+    box-sizing: border-box;
+    border-top: 1px solid #1f2229;
+    border-bottom: 1px solid #1f2229;
+  }
+  #menu .group1 a {
+    display: inline-block;
+    color: #fff;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #menu .group1:hover {
+    border-top: 1px solid #242730;
+  }
+  #menu .group1:active {
+    border-top: 1px solid #242730;
+    background-color: #2a2d37;
+  }
+  #menu .group1:active a {
+    color: #808592;
+  }
+  #menu .group2 a {
+    display: inline-block;
+    color: #808592;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  /*ВЫПАДАЮЩЕЕ МЕНЮ !!!КОНЕЦ!!!*/
+  /*ОСНОВНОЙ КОНТЕЙНЕР*/
+  .paymentWindow {
+    position: static;
+    width: 95%;
+    margin: 0 2.5% 10px 2.5%;
+  }
+  /*ЗАГОЛОВОК*/
+  .header {
+    width: 100%;
+    height: 120px;
+    background-color: #00aeef;
+  }
+  .header .title {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #193945;
+    text-align: center;
+    box-sizing: content-box;
+  }
+  .header .smallText {
+    margin: 8px 25px;
+    font-family: ariel;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+    color: #193945;
+  }
+  /*ЗАГОЛОВОК !!!КОНЕЦ!!!*/
+  /*ФОРМА ОПЛАТЫ И ИНФО*/
+  .content {
+    width: 100%;
+    max-width: 639px;
+    height: 569px;
+    background-color: #fff;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    /*ФОРМЫ КАРТЫ*/
+  }
+  .content .blockInfo {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    font-family: ariel;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8494ab;
+    line-height: 24px;
+    margin-left: 5px;
+  }
+  .content .blockInfo .info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    margin: 14px 0 0 10px;
+  }
+  .content .blockInfo .info .description {
+    display: inline-block;
+    color: #8494ab;
+    margin-right: 40px;
+  }
+  .content .blockInfo .info .dataPay {
+    color: #373c43;
+  }
+  .content .titleCardData {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #383d43;
+  }
+  .content .bankCard {
+    width: 100%;
+    height: 260px;
+    margin-top: 10px;
+    text-align: center;
+    /*ФОРМЫ КАРТЫ !!!КОНЕЦ!!!*/
+  }
+  .content .bankCard .cardTemplate {
+    display: none;
+  }
+  .content .bankCard img {
+    position: relative;
+    display: block;
+    width: 280px;
+    z-index: 1;
+  }
+  .content .bankCard #backSideCard {
+    float: right;
+    bottom: 50px;
+    left: -50px;
+    z-index: 0;
+  }
+  .content .bankCard input {
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+    z-index: 1;
+  }
+  .content .bankCard .cardNumber {
+    width: 250px;
+    position: relative;
+    bottom: 335px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardNumber input {
+    width: 53px;
+    height: 32px;
+    margin-right: 7px;
+    text-align: center;
+  }
+  .content .bankCard .validity {
+    width: 120px;
+    position: relative;
+    bottom: 304px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .validity #month {
+    width: 58px;
+    height: 32px;
+    margin-right: 7px;
+    padding-left: 5px;
+  }
+  .content .bankCard .validity #year {
+    width: 74px;
+    height: 32px;
+    padding-left: 5px;
+  }
+  .content .bankCard .validity #arrow1 {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .validity #arrow2 {
+    position: absolute;
+    right: 6px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .cardowner {
+    width: 255px;
+    position: relative;
+    bottom: 295px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardowner input {
+    width: 255px;
+    height: 32px;
+    padding-left: 10px;
+  }
+  .content .bankCard .cvvCod {
+    width: 100%;
+    position: relative;
+    float: right;
+    left: 0;
+    bottom: 245px;
+    margin-right: 17px;
+    z-index: 1;
+  }
+  .content .bankCard .cvvCod input {
+    float: right;
+    width: 100px;
+    height: 32px;
+    padding-left: 8px;
+  }
+  .content .bankCard .btnPay {
+    position: relative;
+    bottom: 150px;
+    left: 5px;
+  }
+  /*ФУТЕР*/
+  .footer {
+    width: 100%;
+  }
+  .footer .footnote {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 15px 10px;
+  }
+  /*ФУТЕР !!!КОНЕЦ!!!*/
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+  /*width = 651 - 768px*/
+  #sidebar {
+    width: 30%;
+    min-width: 190px;
+    height: 391px;
+    background-color: #1f2229;
+    position: absolute;
+    top: 50px;
+    left: 5.2%;
+  }
+  #sidebar .logo {
+    display: block;
+    width: 100%;
+    height: 36px;
+    margin: 40px 0;
+    text-align: center;
+  }
+  #sidebar .logo img {
+    width: 176px;
+    height: 36px;
+  }
+  #menu {
+    width: 100%;
+    height: 275px;
+    padding: 0;
+    list-style-type: none;
+  }
+  #menu .menuItem {
+    width: 100%;
+    max-width: 318px;
+    height: 55px;
+  }
+  #menu .group1 {
+    background-color: #1f2229;
+    box-sizing: border-box;
+    border-top: 1px solid #1f2229;
+    border-bottom: 1px solid #1f2229;
+  }
+  #menu .group1 a {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 16px;
+    height: 55px;
+    width: 100%;
+    max-width: 290px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  #menu .group1:hover {
+    border-top: 1px solid #242730;
+  }
+  #menu .group1:active {
+    border-top: 1px solid #242730;
+    background-color: #2a2d37;
+  }
+  #menu .group1:active a {
+    color: #808592;
+  }
+  #menu .group2 {
+    background-color: #191c24;
+    box-sizing: border-box;
+    border-top: 1px solid #191c24;
+  }
+  #menu .group2 a {
+    display: inline-block;
+    color: #808592;
+    padding: 15px 0;
+    font-size: 16px;
+    height: 55px;
+    width: 100%;
+    max-width: 290px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  #menu .group2:hover {
+    border-top: 1px solid #242730;
+  }
+  #menu .group2:active {
+    border-top: 1px solid #242730;
+    background-color: #2a2d37;
+  }
+  #menu .group2:active a {
+    color: #808592;
+  }
+  #menu .firstItem {
+    box-sizing: border-box;
+    border-top: 1px solid #22252d;
+  }
+  #menu .fifthItem {
+    box-sizing: border-box;
+    border-top: 1px solid #20232b;
+  }
+  .paymentWindow {
+    position: absolute;
+    top: 50px;
+    left: 35.2%;
+    margin-left: 3px;
+    width: 57.292%;
+    min-width: 360px;
+  }
+  .header {
+    width: 100%;
+    height: 142px;
+    background-color: #00aeef;
+  }
+  .header .title {
+    width: 100%;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #193945;
+    box-sizing: content-box;
+    text-align: center;
+  }
+  .header .smallText {
+    width: 100%;
+    margin: 8px 0 0 0;
+    padding: 0 4% 0 9.5%;
+    font-family: ariel;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #193945;
+    box-sizing: border-box;
+  }
+  .content {
+    width: 100%;
+    height: 569px;
+    background-color: #fff;
+    padding: 10px 0 0 15px;
+    box-sizing: border-box;
+    /*ФОРМЫ КАРТЫ*/
+  }
+  .content .blockInfo {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    font-family: ariel;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8494ab;
+    line-height: 24px;
+  }
+  .content .blockInfo .info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    margin-top: 14px;
+  }
+  .content .blockInfo .info .description {
+    display: inline-block;
+    color: #8494ab;
+    margin-right: 40px;
+  }
+  .content .blockInfo .info .dataPay {
+    color: #373c43;
+  }
+  .content .titleCardData {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #383d43;
+  }
+  .content .bankCard {
+    width: 100%;
+    height: 260px;
+    margin-top: 10px;
+    text-align: center;
+    /*ФОРМЫ КАРТЫ !!!КОНЕЦ!!!*/
+  }
+  .content .bankCard .cardTemplate {
+    display: none;
+  }
+  .content .bankCard img {
+    position: relative;
+    display: block;
+    width: 280px;
+    z-index: 1;
+  }
+  .content .bankCard #backSideCard {
+    float: right;
+    bottom: 65px;
+    z-index: 0;
+  }
+  .content .bankCard input {
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+    z-index: 1;
+  }
+  .content .bankCard input:invalid:not(:placeholder-shown) {
+    border: 1px solid #ff0000;
+  }
+  .content .bankCard input:valid:not(:placeholder-shown) {
+    border: 1px solid #9ec500;
+  }
+  .content .bankCard .cardNumber {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    position: relative;
+    bottom: 335px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardNumber input {
+    width: 53px;
+    height: 32px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    text-align: center;
+  }
+  .content .bankCard .validity {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    position: relative;
+    bottom: 304px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .validity #month {
+    width: 58px;
+    height: 32px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+  }
+  .content .bankCard .validity #year {
+    width: 74px;
+    height: 32px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    border: 1px solid #e4e9ee;
+  }
+  .content .bankCard .validity #arrow1 {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .validity #arrow2 {
+    position: absolute;
+    right: 6px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+  }
+  .content .bankCard .cardowner {
+    width: 255px;
+    position: relative;
+    bottom: 295px;
+    left: 14px;
+    z-index: 1;
+  }
+  .content .bankCard .cardowner input {
+    width: 255px;
+    height: 32px;
+    padding-left: 10px;
+    color: #bec6cf;
+  }
+  .content .bankCard .cvvCod {
+    width: 100px;
+    position: relative;
+    float: right;
+    bottom: 263px;
+    margin-right: 433px;
+    z-index: 1;
+  }
+  .content .bankCard .cvvCod input {
+    width: 100px;
+    height: 32px;
+    padding-left: 8px;
+  }
+  .content .bankCard .btnPay {
+    width: 173px;
+    height: 40px;
+    background-color: #9ec500;
+    color: #fff;
+    border: 1px solid #9ec500;
+    border-radius: 3px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 160px;
+    left: 5px;
+  }
+  .footer {
+    width: 100%;
+    background-color: #373c43;
+  }
+  .footer .footnote {
+    color: #7f8591;
+    font-family: ariel;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 27px 29px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1150px) {
+  /*width = 769 - 1150px*/
+  #sidebar {
+    width: 30%;
+    top: 50px;
+    max-width: 340px;
+    left: 5%;
+  }
+  .menuItem {
+    max-width: 340px;
+  }
+  .group1 a {
+    max-width: 340px;
+  }
+  .group2 a {
+    max-width: 340px;
+  }
+  .paymentWindow {
+    top: 50px;
+    left: 35.2%;
+    width: 62%;
+    max-width: 660px;
+  }
+  .header .title {
+    margin: 39px 0 0 2%;
+  }
+  .header .smallText {
+    margin: 8px 0 0 2%;
+  }
+  .content {
+    max-width: 660px;
+    padding: 44px 0 0 2%;
+  }
+}
