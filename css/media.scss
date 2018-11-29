@@ -420,7 +420,7 @@
   /*ФУТЕР !!!КОНЕЦ!!!*/
 }
 
-@include medium{ /*width = 321 - 650px*/
+@include medium{ /*width = 321 - 500px*/
   body{
     margin: 0;
     padding: 0;
@@ -785,7 +785,7 @@
   /*ФУТЕР !!!КОНЕЦ!!!*/
 }
 
-@include medium2{
+@include medium2{ /*width = 501 - 650px*/
   body{
     margin: 0;
     padding: 0;
@@ -800,8 +800,8 @@
     padding: 23px 2.5% 0 2.5%;
     background-color: #1f2229;
     box-sizing: border-box;
-    overflow: auto; /*КОСТЫЛЬ ДЛЯ ЛИСЫ!!! ОНА ПОЧЕМУ-ТО СТРАННО РАБОТАЕТ(НИФИГА НЕ РАБОТАЕТ) СО СКРИПТОМ*/
-    &::-webkit-scrollbar{ /*СКРЫВАЕТ СКРОЛЛ ДЛЯ ХРОМ-ПОДОБНЫХ БРАУЗЕРОВ*/
+    overflow: auto;
+    &::-webkit-scrollbar{
       display: none;
     }
 
@@ -1019,6 +1019,7 @@
       width: 100%;
       height: 260px;
       margin-top: 10px;
+      padding-left: 15%;
       text-align: center;
 
       & .cardTemplate{
@@ -1029,13 +1030,14 @@
         position: relative;
         display: block;
         width: 280px;
+        left: -40px;
         z-index: 1;
       }
 
       & #backSideCard{
-        float: right;
-        bottom: 50px;
-        left: -50px;
+        bottom: 100px;
+        left: 85px;
+        clear: both;
         z-index: 0;
       }
 
@@ -1049,7 +1051,7 @@
         width: 250px;
         position: relative;
         bottom: 335px;
-        left: 14px;
+        left: -25px;
         z-index: 1;
 
         & input{
@@ -1064,7 +1066,7 @@
         width: 120px;
         position: relative;
         bottom: 304px;
-        left: 14px;
+        left: -25px;
         z-index: 1;
 
         & #month{
@@ -1082,7 +1084,7 @@
 
         & #arrow1{
           position: absolute;
-          left: 30px;
+          left: 23%;
           top: 12px;
           width: 14px;
           height: 8px;
@@ -1090,7 +1092,7 @@
 
         & #arrow2{
           position: absolute;
-          right: 6px;
+          left: 85%;
           top: 12px;
           width: 14px;
           height: 8px;
@@ -1101,7 +1103,7 @@
         width: 255px;
         position: relative;
         bottom: 295px;
-        left: 14px;
+        left: -25px;
         z-index: 1;
 
         & input{
@@ -1112,16 +1114,14 @@
       }
 
       & .cvvCod{
-        width: 100%;
+        width: 102px;
         position: relative;
-        float: right;
-        left: 0;
-        bottom: 245px;
-        margin-right: 17px;
+        left: 245px;
+        bottom: 297px;
+        clear: both;
         z-index: 1;
 
         & input{
-          float: right;
           width: 100px;
           height: 32px;
           padding-left: 8px;
@@ -1132,7 +1132,7 @@
       & .btnPay{
         position: relative;
         bottom: 150px;
-        left: 5px;
+        left: -89px;
       }
     }
   }
