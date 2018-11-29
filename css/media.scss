@@ -8,10 +8,13 @@
   @media (min-width: 501px) and (max-width: 650px) { @content; }
 }
 @mixin high {
-  @media (min-width: 651px) and (max-width: 768px) { @content; }
+  @media (min-width: 651px) and (max-width: 870px) { @content; }
+}
+@mixin high2 {
+  @media (min-width: 871px) and (max-width: 960px) { @content; }
 }
 @mixin veryHigh {
-  @media (min-width: 769px) and (max-width: 1150px) { @content; }
+  @media (min-width: 961px) and (max-width: 1150px) { @content; }
 }
 
 
@@ -1021,6 +1024,7 @@
       margin-top: 10px;
       padding-left: 15%;
       text-align: center;
+      box-sizing: border-box;
 
       & .cardTemplate{
         display: none;
@@ -1132,7 +1136,7 @@
       & .btnPay{
         position: relative;
         bottom: 150px;
-        left: -89px;
+        left: -10%;
       }
     }
   }
@@ -1150,7 +1154,7 @@
   /*ФУТЕР !!!КОНЕЦ!!!*/
 }
 
-@include high{ /*width = 651 - 768px*/
+@include high{ /*width = 651 - 870px*/
   #sidebar{
     width: 30%;
     min-width: 190px;
@@ -1512,7 +1516,63 @@
   }
 }
 
-@include veryHigh{ /*width = 769 - 1150px*/
+@include high2{ /*width = 871 - 960px*/
+  #sidebar{
+    width: 30%;
+    top: 50px;
+    max-width: 340px;
+    left: 1%;
+  }
+
+  .menuItem{
+    max-width: 340px;
+  }
+
+  .group1{
+    & a{
+      max-width: 340px;
+    }
+  }
+
+  .group2{
+    & a{
+      max-width: 340px;
+    }
+  }
+
+  .paymentWindow{
+    top: 50px;
+    left: 31.2%;
+    width: 68%;
+    max-width: 660px;
+  }
+
+  .header{
+    & .title{
+      margin: 39px 0 0 2%;
+    }
+
+    & .smallText{
+      margin: 8px 0 0 2%;
+    }
+  }
+
+  .bankCard{
+    max-width: 580px;
+    height: 260px;
+    margin-top: 10px;
+    // text-align: center;
+  }
+
+  .content{
+    width: 100%;
+    padding: 44px 0 0 1%;
+    box-sizing: border-box;
+
+  }
+}
+
+@include veryHigh{ /*width = 961 - 1150px*/
   #sidebar{
     width: 30%;
     top: 50px;

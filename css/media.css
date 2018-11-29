@@ -870,6 +870,7 @@
     margin-top: 10px;
     padding-left: 15%;
     text-align: center;
+    box-sizing: border-box;
     /*ФОРМЫ КАРТЫ !!!КОНЕЦ!!!*/
   }
   .content .bankCard .cardTemplate {
@@ -966,7 +967,7 @@
   .content .bankCard .btnPay {
     position: relative;
     bottom: 150px;
-    left: -89px;
+    left: -10%;
   }
   /*ФУТЕР*/
   .footer {
@@ -980,8 +981,8 @@
   /*ФУТЕР !!!КОНЕЦ!!!*/
 }
 
-@media (min-width: 651px) and (max-width: 768px) {
-  /*width = 651 - 768px*/
+@media (min-width: 651px) and (max-width: 870px) {
+  /*width = 651 - 870px*/
   #sidebar {
     width: 30%;
     min-width: 190px;
@@ -1291,8 +1292,49 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1150px) {
-  /*width = 769 - 1150px*/
+@media (min-width: 871px) and (max-width: 960px) {
+  /*width = 871 - 960px*/
+  #sidebar {
+    width: 30%;
+    top: 50px;
+    max-width: 340px;
+    left: 1%;
+  }
+  .menuItem {
+    max-width: 340px;
+  }
+  .group1 a {
+    max-width: 340px;
+  }
+  .group2 a {
+    max-width: 340px;
+  }
+  .paymentWindow {
+    top: 50px;
+    left: 31.2%;
+    width: 68%;
+    max-width: 660px;
+  }
+  .header .title {
+    margin: 39px 0 0 2%;
+  }
+  .header .smallText {
+    margin: 8px 0 0 2%;
+  }
+  .bankCard {
+    max-width: 580px;
+    height: 260px;
+    margin-top: 10px;
+  }
+  .content {
+    width: 100%;
+    padding: 44px 0 0 1%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1150px) {
+  /*width = 961 - 1150px*/
   #sidebar {
     width: 30%;
     top: 50px;
